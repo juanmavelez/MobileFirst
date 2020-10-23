@@ -28,4 +28,206 @@ html {
   font-family: 'DM Sans', sans-serif;
 }
 
-font-family: 'Inter', sans-serif;
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: var(--linear_BG);
+}
+
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+  align-self: center;
+}
+
+.header--title-container {
+  width: 90%;
+  min-width: 280px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+
+.header--title-container h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just_white);
+}
+
+.header--title-container p {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--just_white);
+}
+
+.header--title-container .header--button {
+  position: absolute;
+  left: calc(50% - 118px);
+  top: 270px;
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 229px;
+  height: 48px;
+  background-color: var(--off_white);
+  /* Sombra */
+  box-shadow: 0px 4px 8px rgba(89, 73, 38, 0.16);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
+
+.header--button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url('./assets/icons/down_arrow.svg');
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off_white);
+}
+
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-exchange-container .backgroundImag {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-image: url('/assets/images/Bitcoin.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-exchange-container--title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main-exchange-container h2 {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: val(--black);
+}
+
+.main-exchange-container p {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
+
+.main-tables-container {
+  width: 70%;
+  min-width: 197px;
+  max-width: 500px;
+  height: 159px;
+  margin-top: 30px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+.main-currency-table .currency-table-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin_orange);
+}
+
+.currency-table--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  border-radius: 5%;
+}
+
+.currency-table--container .table__left {
+  width: 100%;
+  height: 40px;
+  padding: 10px 0px 0px 12px;
+  font-weight: 500;
+  color: #b5b0ac;
+  background-color: var(--just_white);
+}
+
+.currency-table--container .table__right {
+  width: 100px;
+  height: 40px;
+  padding: 10px 0px 0px 12px;
+  font-weight: 400;
+  color: #757575;
+  background-color: var(--just_white);
+} /* main-currency-table .table__left */
+
+.main-currency-table .currency-table--container .down {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-left: 12px;
+  background: url('./assets/icons/trending-down.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-currency-table .currency-table--container .up {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-left: 12px;
+  background: url('./assets/icons/trending-up.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-currency-table .update {
+  padding: 8px;
+  margin: 20px auto;
+  background-color: var(--soft_orange);
+  border-radius: 5px;
+}
+
+.main-currency-table .update p {
+  margin: 7px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--warm_black);
+}
