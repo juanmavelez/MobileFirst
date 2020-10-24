@@ -182,7 +182,7 @@ main {
 
 .comisions-table--container .table__right,
 .currency-table--container .table__right {
-  width: 100px;
+  width: 100%;
   height: 40px;
   padding: 10px 0px 0px 12px;
   font-weight: 300;
